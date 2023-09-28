@@ -1,0 +1,153 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #BA94D1;
+}
+main {
+  background-color: #BA94D1;
+  min-height: 100vh;
+  width: 25rem;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.box-pomodoro{
+  background-color: #c8a2e0;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+}
+
+.box-pomodoro p{
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
+#div-botoes-pomodoro{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.3rem;
+}
+#botao-next{
+  height: 4rem;
+  background-image: url(../img/botao-next.png);
+  background-position: center;
+ 
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+}
+h2{
+  color: white;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+#lista-tarefas{
+  min-height: 5rem;
+}
+
+hr{
+  border-style: solid none none none;
+  color: white;
+}
+form{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 1rem 0rem;
+}
+
+#input-tarefas {
+  border-style: none none solid none;
+  border-color: white;
+  background-color: #BA94D1;
+  width: 60%;
+  height: 2rem;
+  color: white;
+}
+
+div.div-tarefa{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem; 
+}
+
+li{
+  list-style: none;
+  color: white; 
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+}
+
+li.checked{
+  background-color: #bd6bec;
+  text-decoration: line-through;
+}
+.div-tarefa button{
+  width: 1.5rem;
+  background-image: url(../img/trash.png);
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+}
+
+button {
+  background-color: #ab6ad0;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#div-botoes{
+  margin-top: 1.5rem;
+
+}
+
+@media (min-width: 800px) {
+  main{
+    width: 45%;
+  }
+  .box-pomodoro p{
+    font-size: 5rem;
+  }
+  li{
+    font-size: 1.2rem;
+  }
+  h1{
+    font-size: 3.2rem;
+  }
+  h2{
+    font-size: 2.2rem;
+  }
+}

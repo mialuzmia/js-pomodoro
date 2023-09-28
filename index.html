@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/cronometro.js" defer></script>
+    <title>Pomodoro</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Pomodoro</h1>
+      <section class="box-pomodoro">
+        <p id="texto-cronometro">25:00</p>
+        <div id="div-botoes-pomodoro">
+          <button id="btn-start">Começar</button>
+            <button id="botao-next"></button>
+        </div>
+        
+      </section>
+      <div>
+        <h2>Tarefas</h2>
+        <hr>
+      </div>
+      <ul id="lista-tarefas"></ul>
+      <form>
+        
+        <input type="text" id="input-tarefas"/>
+        <button>Cadastrar</button>
+      </form>
+      
+      <div id="div-botoes">
+        <button id="btn-marcar">marcar todos</button>
+        <button id="btn-limpar">limpar</button>
+      </div>
+    </main>
+  </body>
+</html>
